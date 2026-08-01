@@ -1,0 +1,795 @@
+=== Наблюдение за HPA по памяти (часть 1) ===
+старт: 2026-08-01 00:05:04
+NAME                  REFERENCE                 TARGETS           MINPODS   MAXPODS   REPLICAS   AGE
+scaletestapp-memory   Deployment/scaletestapp   memory: 40%/80%   1         10        1          6m35s
+
+--- 00:06:23
+HPA: targets=40%/80%  replicas=1
+  pod scaletestapp-68c9fd96d9-zz6qp  cpu=1m  mem=12Mi
+--- 00:06:33
+HPA: targets=40%/80%  replicas=1
+  pod scaletestapp-68c9fd96d9-zz6qp  cpu=1m  mem=12Mi
+--- 00:06:43
+HPA: targets=40%/80%  replicas=1
+  pod scaletestapp-68c9fd96d9-zz6qp  cpu=1m  mem=12Mi
+--- 00:06:54
+HPA: targets=40%/80%  replicas=1
+  pod scaletestapp-68c9fd96d9-zz6qp  cpu=1m  mem=12Mi
+--- 00:07:04
+HPA: targets=40%/80%  replicas=1
+  pod scaletestapp-68c9fd96d9-zz6qp  cpu=1m  mem=12Mi
+--- 00:07:14
+HPA: targets=40%/80%  replicas=1
+  pod scaletestapp-68c9fd96d9-zz6qp  cpu=1m  mem=12Mi
+--- 00:07:24
+HPA: targets=40%/80%  replicas=1
+  pod scaletestapp-68c9fd96d9-zz6qp  cpu=1m  mem=12Mi
+--- 00:07:34
+HPA: targets=40%/80%  replicas=1
+  pod scaletestapp-68c9fd96d9-zz6qp  cpu=1m  mem=12Mi
+--- 00:07:45
+HPA: targets=40%/80%  replicas=1
+  pod scaletestapp-68c9fd96d9-zz6qp  cpu=1m  mem=12Mi
+--- 00:07:55
+HPA: targets=40%/80%  replicas=1
+  pod scaletestapp-68c9fd96d9-zz6qp  cpu=12m  mem=18Mi
+--- 00:08:05
+HPA: targets=62%/80%  replicas=1
+  pod scaletestapp-68c9fd96d9-zz6qp  cpu=12m  mem=18Mi
+--- 00:08:15
+HPA: targets=62%/80%  replicas=1
+  pod scaletestapp-68c9fd96d9-zz6qp  cpu=12m  mem=18Mi
+--- 00:08:25
+HPA: targets=62%/80%  replicas=1
+  pod scaletestapp-68c9fd96d9-zz6qp  cpu=12m  mem=18Mi
+--- 00:08:35
+HPA: targets=62%/80%  replicas=1
+  pod scaletestapp-68c9fd96d9-zz6qp  cpu=12m  mem=18Mi
+--- 00:08:45
+HPA: targets=62%/80%  replicas=1
+  pod scaletestapp-68c9fd96d9-zz6qp  cpu=12m  mem=18Mi
+--- 00:08:56
+HPA: targets=62%/80%  replicas=1
+  pod scaletestapp-68c9fd96d9-zz6qp  cpu=18m  mem=18Mi
+--- 00:09:06
+HPA: targets=62%/80%  replicas=1
+  pod scaletestapp-68c9fd96d9-zz6qp  cpu=18m  mem=18Mi
+--- 00:09:16
+HPA: targets=62%/80%  replicas=1
+  pod scaletestapp-68c9fd96d9-zz6qp  cpu=18m  mem=18Mi
+--- 00:09:26
+HPA: targets=62%/80%  replicas=1
+  pod scaletestapp-68c9fd96d9-zz6qp  cpu=18m  mem=18Mi
+--- 00:09:36
+HPA: targets=62%/80%  replicas=1
+  pod scaletestapp-68c9fd96d9-zz6qp  cpu=18m  mem=18Mi
+--- 00:09:47
+HPA: targets=62%/80%  replicas=1
+  pod scaletestapp-68c9fd96d9-zz6qp  cpu=18m  mem=18Mi
+--- 00:09:57
+HPA: targets=62%/80%  replicas=1
+  pod scaletestapp-68c9fd96d9-zz6qp  cpu=18m  mem=18Mi
+--- 00:10:07
+HPA: targets=63%/80%  replicas=1
+  pod scaletestapp-68c9fd96d9-zz6qp  cpu=18m  mem=18Mi
+--- 00:10:17
+HPA: targets=63%/80%  replicas=1
+  pod scaletestapp-68c9fd96d9-zz6qp  cpu=18m  mem=18Mi
+--- 00:10:27
+HPA: targets=63%/80%  replicas=1
+  pod scaletestapp-68c9fd96d9-zz6qp  cpu=18m  mem=18Mi
+--- 00:10:37
+HPA: targets=63%/80%  replicas=1
+  pod scaletestapp-68c9fd96d9-zz6qp  cpu=18m  mem=18Mi
+--- 00:10:48
+HPA: targets=63%/80%  replicas=1
+  pod scaletestapp-68c9fd96d9-zz6qp  cpu=18m  mem=18Mi
+--- 00:10:58
+HPA: targets=63%/80%  replicas=1
+  pod scaletestapp-68c9fd96d9-zz6qp  cpu=18m  mem=18Mi
+--- 00:11:08
+HPA: targets=62%/80%  replicas=1
+  pod scaletestapp-68c9fd96d9-zz6qp  cpu=18m  mem=18Mi
+--- 00:11:18
+HPA: targets=62%/80%  replicas=1
+  pod scaletestapp-68c9fd96d9-zz6qp  cpu=18m  mem=18Mi
+--- 00:11:28
+HPA: targets=62%/80%  replicas=1
+  pod scaletestapp-68c9fd96d9-zz6qp  cpu=18m  mem=18Mi
+--- 00:11:38
+HPA: targets=62%/80%  replicas=1
+  pod scaletestapp-68c9fd96d9-zz6qp  cpu=18m  mem=18Mi
+--- 00:11:49
+HPA: targets=62%/80%  replicas=1
+  pod scaletestapp-68c9fd96d9-zz6qp  cpu=18m  mem=18Mi
+--- 00:11:59
+HPA: targets=62%/80%  replicas=1
+  pod scaletestapp-68c9fd96d9-zz6qp  cpu=18m  mem=18Mi
+--- 00:12:09
+HPA: targets=62%/80%  replicas=1
+  pod scaletestapp-68c9fd96d9-zz6qp  cpu=18m  mem=18Mi
+--- 00:12:19
+HPA: targets=62%/80%  replicas=1
+  pod scaletestapp-68c9fd96d9-zz6qp  cpu=18m  mem=18Mi
+--- 00:12:29
+HPA: targets=62%/80%  replicas=1
+  pod scaletestapp-68c9fd96d9-zz6qp  cpu=18m  mem=18Mi
+--- 00:12:39
+HPA: targets=62%/80%  replicas=1
+  pod scaletestapp-68c9fd96d9-zz6qp  cpu=18m  mem=18Mi
+--- 00:12:50
+HPA: targets=62%/80%  replicas=1
+  pod scaletestapp-68c9fd96d9-zz6qp  cpu=18m  mem=18Mi
+--- 00:13:00
+HPA: targets=63%/80%  replicas=1
+  pod scaletestapp-68c9fd96d9-zz6qp  cpu=18m  mem=18Mi
+--- 00:13:10
+HPA: targets=63%/80%  replicas=1
+  pod scaletestapp-68c9fd96d9-zz6qp  cpu=18m  mem=18Mi
+--- 00:13:20
+HPA: targets=63%/80%  replicas=1
+  pod scaletestapp-68c9fd96d9-zz6qp  cpu=18m  mem=18Mi
+--- 00:13:30
+HPA: targets=63%/80%  replicas=1
+  pod scaletestapp-68c9fd96d9-zz6qp  cpu=18m  mem=18Mi
+--- 00:13:40
+HPA: targets=63%/80%  replicas=1
+  pod scaletestapp-68c9fd96d9-zz6qp  cpu=18m  mem=18Mi
+--- 00:13:51
+HPA: targets=63%/80%  replicas=1
+  pod scaletestapp-68c9fd96d9-zz6qp  cpu=18m  mem=18Mi
+--- 00:14:01
+HPA: targets=63%/80%  replicas=1
+  pod scaletestapp-68c9fd96d9-zz6qp  cpu=17m  mem=19Mi
+
+=== Прогон 2: 500 пользователей, spawn rate 5 ===
+старт: 2026-08-01 00:34:53
+--- 00:43:07
+HPA: targets=32%/80%  replicas=1
+  pod scaletestapp-85bf77c764-t5bc2  cpu=1m  mem=9Mi
+--- 00:43:17
+HPA: targets=32%/80%  replicas=1
+  pod scaletestapp-85bf77c764-t5bc2  cpu=1m  mem=9Mi
+--- 00:43:27
+HPA: targets=32%/80%  replicas=1
+  pod scaletestapp-85bf77c764-t5bc2  cpu=1m  mem=9Mi
+--- 00:43:37
+HPA: targets=32%/80%  replicas=1
+  pod scaletestapp-85bf77c764-t5bc2  cpu=1m  mem=9Mi
+--- 00:43:48
+HPA: targets=32%/80%  replicas=1
+  pod scaletestapp-85bf77c764-t5bc2  cpu=1m  mem=9Mi
+--- 00:43:58
+HPA: targets=32%/80%  replicas=1
+  pod scaletestapp-85bf77c764-t5bc2  cpu=9m  mem=18Mi
+--- 00:44:08
+HPA: targets=60%/80%  replicas=1
+  pod scaletestapp-85bf77c764-t5bc2  cpu=9m  mem=18Mi
+--- 00:44:18
+HPA: targets=60%/80%  replicas=1
+  pod scaletestapp-85bf77c764-t5bc2  cpu=9m  mem=18Mi
+--- 00:44:28
+HPA: targets=60%/80%  replicas=1
+  pod scaletestapp-85bf77c764-t5bc2  cpu=9m  mem=18Mi
+--- 00:44:38
+HPA: targets=60%/80%  replicas=1
+  pod scaletestapp-85bf77c764-t5bc2  cpu=9m  mem=18Mi
+--- 00:44:48
+HPA: targets=60%/80%  replicas=1
+  pod scaletestapp-85bf77c764-t5bc2  cpu=9m  mem=18Mi
+--- 00:44:59
+HPA: targets=60%/80%  replicas=1
+  pod scaletestapp-85bf77c764-t5bc2  cpu=28m  mem=25Mi
+--- 00:45:09
+HPA: targets=86%/80%  replicas=1
+  pod scaletestapp-85bf77c764-t5bc2  cpu=28m  mem=25Mi
+--- 00:45:19
+HPA: targets=86%/80%  replicas=1
+  pod scaletestapp-85bf77c764-t5bc2  cpu=28m  mem=25Mi
+--- 00:45:29
+HPA: targets=86%/80%  replicas=1
+  pod scaletestapp-85bf77c764-t5bc2  cpu=28m  mem=25Mi
+--- 00:45:39
+HPA: targets=86%/80%  replicas=1
+  pod scaletestapp-85bf77c764-t5bc2  cpu=28m  mem=25Mi
+--- 00:45:49
+HPA: targets=86%/80%  replicas=1
+  pod scaletestapp-85bf77c764-t5bc2  cpu=28m  mem=25Mi
+--- 00:46:00
+HPA: targets=86%/80%  replicas=1
+  pod scaletestapp-85bf77c764-t5bc2  cpu=30m  mem=28Mi
+--- 00:46:10
+HPA: targets=96%/80%  replicas=1
+  pod scaletestapp-85bf77c764-t5bc2  cpu=30m  mem=28Mi
+--- 00:46:20
+HPA: targets=96%/80%  replicas=2
+  pod scaletestapp-85bf77c764-t5bc2  cpu=30m  mem=28Mi
+--- 00:46:30
+HPA: targets=96%/80%  replicas=2
+  pod scaletestapp-85bf77c764-t5bc2  cpu=30m  mem=28Mi
+--- 00:46:40
+HPA: targets=96%/80%  replicas=2
+  pod scaletestapp-85bf77c764-t5bc2  cpu=30m  mem=28Mi
+--- 00:46:50
+HPA: targets=96%/80%  replicas=2
+  pod scaletestapp-85bf77c764-t5bc2  cpu=30m  mem=28Mi
+--- 00:47:01
+HPA: targets=96%/80%  replicas=2
+  pod scaletestapp-85bf77c764-t5bc2  cpu=3m  mem=9Mi
+  pod scaletestapp-85bf77c764-t6rdw  cpu=13m  mem=25Mi
+--- 00:47:11
+HPA: targets=58%/80%  replicas=2
+  pod scaletestapp-85bf77c764-t5bc2  cpu=3m  mem=9Mi
+  pod scaletestapp-85bf77c764-t6rdw  cpu=13m  mem=25Mi
+--- 00:47:21
+HPA: targets=58%/80%  replicas=2
+  pod scaletestapp-85bf77c764-t5bc2  cpu=3m  mem=9Mi
+  pod scaletestapp-85bf77c764-t6rdw  cpu=13m  mem=25Mi
+--- 00:47:31
+HPA: targets=58%/80%  replicas=2
+  pod scaletestapp-85bf77c764-t5bc2  cpu=3m  mem=9Mi
+  pod scaletestapp-85bf77c764-t6rdw  cpu=13m  mem=25Mi
+--- 00:47:41
+HPA: targets=58%/80%  replicas=2
+  pod scaletestapp-85bf77c764-t5bc2  cpu=3m  mem=9Mi
+  pod scaletestapp-85bf77c764-t6rdw  cpu=13m  mem=25Mi
+--- 00:47:52
+HPA: targets=58%/80%  replicas=2
+  pod scaletestapp-85bf77c764-t5bc2  cpu=3m  mem=9Mi
+  pod scaletestapp-85bf77c764-t6rdw  cpu=13m  mem=25Mi
+--- 00:48:02
+HPA: targets=64%/80%  replicas=2
+  pod scaletestapp-85bf77c764-t5bc2  cpu=1m  mem=9Mi
+  pod scaletestapp-85bf77c764-t6rdw  cpu=27m  mem=28Mi
+--- 00:48:12
+HPA: targets=64%/80%  replicas=2
+  pod scaletestapp-85bf77c764-t5bc2  cpu=1m  mem=9Mi
+  pod scaletestapp-85bf77c764-t6rdw  cpu=27m  mem=28Mi
+--- 00:48:22
+HPA: targets=64%/80%  replicas=2
+  pod scaletestapp-85bf77c764-t5bc2  cpu=1m  mem=9Mi
+  pod scaletestapp-85bf77c764-t6rdw  cpu=27m  mem=28Mi
+--- 00:48:32
+HPA: targets=64%/80%  replicas=2
+  pod scaletestapp-85bf77c764-t5bc2  cpu=1m  mem=9Mi
+  pod scaletestapp-85bf77c764-t6rdw  cpu=27m  mem=28Mi
+--- 00:48:42
+HPA: targets=64%/80%  replicas=2
+  pod scaletestapp-85bf77c764-t5bc2  cpu=1m  mem=9Mi
+  pod scaletestapp-85bf77c764-t6rdw  cpu=27m  mem=28Mi
+--- 00:48:52
+HPA: targets=64%/80%  replicas=2
+  pod scaletestapp-85bf77c764-t5bc2  cpu=1m  mem=9Mi
+  pod scaletestapp-85bf77c764-t6rdw  cpu=27m  mem=28Mi
+--- 00:49:03
+HPA: targets=65%/80%  replicas=2
+  pod scaletestapp-85bf77c764-t5bc2  cpu=1m  mem=9Mi
+  pod scaletestapp-85bf77c764-t6rdw  cpu=28m  mem=29Mi
+--- 00:49:13
+HPA: targets=65%/80%  replicas=2
+  pod scaletestapp-85bf77c764-t5bc2  cpu=1m  mem=9Mi
+  pod scaletestapp-85bf77c764-t6rdw  cpu=28m  mem=29Mi
+--- 00:49:23
+HPA: targets=65%/80%  replicas=2
+  pod scaletestapp-85bf77c764-t5bc2  cpu=1m  mem=9Mi
+  pod scaletestapp-85bf77c764-t6rdw  cpu=28m  mem=29Mi
+--- 00:49:33
+HPA: targets=65%/80%  replicas=2
+  pod scaletestapp-85bf77c764-t5bc2  cpu=1m  mem=9Mi
+  pod scaletestapp-85bf77c764-t6rdw  cpu=28m  mem=29Mi
+--- 00:49:43
+HPA: targets=65%/80%  replicas=2
+  pod scaletestapp-85bf77c764-t5bc2  cpu=1m  mem=9Mi
+  pod scaletestapp-85bf77c764-t6rdw  cpu=28m  mem=29Mi
+--- 00:49:53
+HPA: targets=65%/80%  replicas=2
+  pod scaletestapp-85bf77c764-t5bc2  cpu=26m  mem=27Mi
+  pod scaletestapp-85bf77c764-t6rdw  cpu=1m  mem=9Mi
+--- 00:50:04
+HPA: targets=62%/80%  replicas=2
+  pod scaletestapp-85bf77c764-t5bc2  cpu=26m  mem=27Mi
+  pod scaletestapp-85bf77c764-t6rdw  cpu=1m  mem=9Mi
+--- 00:50:14
+HPA: targets=62%/80%  replicas=2
+  pod scaletestapp-85bf77c764-t5bc2  cpu=26m  mem=27Mi
+  pod scaletestapp-85bf77c764-t6rdw  cpu=1m  mem=9Mi
+--- 00:50:24
+HPA: targets=62%/80%  replicas=2
+  pod scaletestapp-85bf77c764-t5bc2  cpu=26m  mem=27Mi
+  pod scaletestapp-85bf77c764-t6rdw  cpu=1m  mem=9Mi
+--- 00:50:34
+HPA: targets=62%/80%  replicas=2
+  pod scaletestapp-85bf77c764-t5bc2  cpu=26m  mem=27Mi
+  pod scaletestapp-85bf77c764-t6rdw  cpu=1m  mem=9Mi
+--- 00:50:44
+HPA: targets=62%/80%  replicas=2
+  pod scaletestapp-85bf77c764-t5bc2  cpu=26m  mem=27Mi
+  pod scaletestapp-85bf77c764-t6rdw  cpu=1m  mem=9Mi
+--- 00:50:54
+HPA: targets=62%/80%  replicas=2
+  pod scaletestapp-85bf77c764-t5bc2  cpu=29m  mem=29Mi
+  pod scaletestapp-85bf77c764-t6rdw  cpu=1m  mem=9Mi
+--- 00:51:04
+HPA: targets=65%/80%  replicas=2
+  pod scaletestapp-85bf77c764-t5bc2  cpu=29m  mem=29Mi
+  pod scaletestapp-85bf77c764-t6rdw  cpu=1m  mem=9Mi
+--- 00:51:15
+HPA: targets=65%/80%  replicas=2
+  pod scaletestapp-85bf77c764-t5bc2  cpu=29m  mem=29Mi
+  pod scaletestapp-85bf77c764-t6rdw  cpu=1m  mem=9Mi
+--- 00:51:25
+HPA: targets=65%/80%  replicas=2
+  pod scaletestapp-85bf77c764-t5bc2  cpu=29m  mem=29Mi
+  pod scaletestapp-85bf77c764-t6rdw  cpu=1m  mem=9Mi
+--- 00:51:35
+HPA: targets=65%/80%  replicas=2
+  pod scaletestapp-85bf77c764-t5bc2  cpu=29m  mem=29Mi
+  pod scaletestapp-85bf77c764-t6rdw  cpu=1m  mem=9Mi
+--- 00:51:45
+HPA: targets=65%/80%  replicas=2
+  pod scaletestapp-85bf77c764-t5bc2  cpu=29m  mem=29Mi
+  pod scaletestapp-85bf77c764-t6rdw  cpu=1m  mem=9Mi
+--- 00:51:55
+HPA: targets=65%/80%  replicas=2
+  pod scaletestapp-85bf77c764-t5bc2  cpu=1m  mem=9Mi
+  pod scaletestapp-85bf77c764-t6rdw  cpu=27m  mem=27Mi
+--- 00:52:05
+HPA: targets=62%/80%  replicas=2
+  pod scaletestapp-85bf77c764-t5bc2  cpu=1m  mem=9Mi
+  pod scaletestapp-85bf77c764-t6rdw  cpu=27m  mem=27Mi
+--- 00:52:16
+HPA: targets=62%/80%  replicas=2
+  pod scaletestapp-85bf77c764-t5bc2  cpu=1m  mem=9Mi
+  pod scaletestapp-85bf77c764-t6rdw  cpu=27m  mem=27Mi
+--- 00:52:26
+HPA: targets=62%/80%  replicas=2
+  pod scaletestapp-85bf77c764-t5bc2  cpu=1m  mem=9Mi
+  pod scaletestapp-85bf77c764-t6rdw  cpu=27m  mem=27Mi
+--- 00:52:36
+HPA: targets=62%/80%  replicas=2
+  pod scaletestapp-85bf77c764-t5bc2  cpu=1m  mem=9Mi
+  pod scaletestapp-85bf77c764-t6rdw  cpu=27m  mem=27Mi
+--- 00:52:46
+HPA: targets=62%/80%  replicas=2
+  pod scaletestapp-85bf77c764-t5bc2  cpu=1m  mem=9Mi
+  pod scaletestapp-85bf77c764-t6rdw  cpu=27m  mem=27Mi
+--- 00:52:56
+HPA: targets=62%/80%  replicas=2
+  pod scaletestapp-85bf77c764-t5bc2  cpu=1m  mem=9Mi
+  pod scaletestapp-85bf77c764-t6rdw  cpu=12m  mem=26Mi
+--- 00:53:07
+HPA: targets=60%/80%  replicas=2
+  pod scaletestapp-85bf77c764-t5bc2  cpu=1m  mem=9Mi
+  pod scaletestapp-85bf77c764-t6rdw  cpu=12m  mem=26Mi
+--- 00:53:17
+HPA: targets=60%/80%  replicas=2
+  pod scaletestapp-85bf77c764-t5bc2  cpu=1m  mem=9Mi
+  pod scaletestapp-85bf77c764-t6rdw  cpu=12m  mem=26Mi
+--- 00:53:27
+HPA: targets=60%/80%  replicas=2
+  pod scaletestapp-85bf77c764-t5bc2  cpu=1m  mem=9Mi
+  pod scaletestapp-85bf77c764-t6rdw  cpu=12m  mem=26Mi
+--- 00:53:37
+HPA: targets=60%/80%  replicas=2
+  pod scaletestapp-85bf77c764-t5bc2  cpu=1m  mem=9Mi
+  pod scaletestapp-85bf77c764-t6rdw  cpu=12m  mem=26Mi
+--- 00:53:47
+HPA: targets=60%/80%  replicas=2
+  pod scaletestapp-85bf77c764-t5bc2  cpu=1m  mem=9Mi
+  pod scaletestapp-85bf77c764-t6rdw  cpu=12m  mem=26Mi
+
+=== Итог части 1: 2026-08-01 00:53:54 ===
+NAME                  REFERENCE                 TARGETS           MINPODS   MAXPODS   REPLICAS   AGE
+scaletestapp-memory   Deployment/scaletestapp   memory: 60%/80%   1         10        2          55m
+
+Events:
+  Type     Reason                        Age                From                       Message
+  ----     ------                        ----               ----                       -------
+  Warning  FailedGetResourceMetric       19m (x2 over 55m)  horizontal-pod-autoscaler  failed to get memory utilization: unable to get metrics for resource memory: no metrics returned from resource metrics API
+  Warning  FailedComputeMetricsReplicas  19m (x2 over 55m)  horizontal-pod-autoscaler  invalid metrics (1 invalid out of 1), first error is: failed to get memory resource metric value: failed to get memory utilization: unable to get metrics for resource memory: no metrics returned from resource metrics API
+  Normal   SuccessfulRescale             7m54s              horizontal-pod-autoscaler  New size: 2; reason: memory resource utilization (percentage of request) above target
+
+--- поды:
+NAME                            READY   STATUS    RESTARTS        AGE     IP            NODE       NOMINATED NODE   READINESS GATES
+scaletestapp-85bf77c764-t5bc2   1/1     Running   2 (2m59s ago)   19m     10.244.0.54   minikube   <none>           <none>
+scaletestapp-85bf77c764-t6rdw   1/1     Running   1 (4m56s ago)   7m54s   10.244.0.55   minikube   <none>           <none>
+
+--- результат нагрузки locust: 81674 запроса, ~150 RPS, 500 пользователей
+--- 00:53:57
+HPA: targets=60%/80%  replicas=2
+  pod scaletestapp-85bf77c764-t5bc2  cpu=1m  mem=9Mi
+  pod scaletestapp-85bf77c764-t6rdw  cpu=1m  mem=26Mi
+--- 00:54:08
+HPA: targets=60%/80%  replicas=2
+  pod scaletestapp-85bf77c764-t5bc2  cpu=1m  mem=9Mi
+  pod scaletestapp-85bf77c764-t6rdw  cpu=1m  mem=26Mi
+
+=== Прогон 3 (для скриншотов дашборда): 2026-08-01 02:55:43 ===
+чистый под, 1 реплика, HPA по памяти, нагрузка 500 пользователей
+
+--- 02:55:43
+  HPA: memory: <unknown>/80%  реплик: 1
+--- 02:55:53
+  HPA: memory: <unknown>/80%  реплик: 1
+  под scaletestapp-69c544bf95-kz2kq  cpu=3m  mem=16Mi
+--- 02:56:04
+  HPA: memory: 56%/80%  реплик: 1
+  под scaletestapp-69c544bf95-kz2kq  cpu=3m  mem=16Mi
+--- 02:56:14
+  HPA: memory: 56%/80%  реплик: 1
+  под scaletestapp-69c544bf95-kz2kq  cpu=3m  mem=16Mi
+--- 02:56:24
+  HPA: memory: 56%/80%  реплик: 1
+  под scaletestapp-69c544bf95-kz2kq  cpu=3m  mem=16Mi
+--- 02:56:34
+  HPA: memory: 56%/80%  реплик: 1
+  под scaletestapp-69c544bf95-kz2kq  cpu=3m  mem=16Mi
+--- 02:56:44
+  HPA: memory: 56%/80%  реплик: 1
+  под scaletestapp-69c544bf95-kz2kq  cpu=3m  mem=16Mi
+--- 02:56:55
+  HPA: memory: 56%/80%  реплик: 1
+  под scaletestapp-69c544bf95-kz2kq  cpu=2m  mem=17Mi
+--- 02:57:05
+  HPA: memory: 58%/80%  реплик: 1
+  под scaletestapp-69c544bf95-kz2kq  cpu=2m  mem=17Mi
+--- 02:57:15
+  HPA: memory: 58%/80%  реплик: 1
+  под scaletestapp-69c544bf95-kz2kq  cpu=2m  mem=17Mi
+--- 02:57:25
+  HPA: memory: 58%/80%  реплик: 1
+  под scaletestapp-69c544bf95-kz2kq  cpu=2m  mem=17Mi
+--- 02:57:35
+  HPA: memory: 58%/80%  реплик: 1
+  под scaletestapp-69c544bf95-kz2kq  cpu=2m  mem=17Mi
+--- 02:57:46
+  HPA: memory: 58%/80%  реплик: 1
+  под scaletestapp-69c544bf95-kz2kq  cpu=2m  mem=17Mi
+--- 02:57:56
+  HPA: memory: 58%/80%  реплик: 1
+  под scaletestapp-69c544bf95-kz2kq  cpu=21m  mem=23Mi
+--- 02:58:06
+  HPA: memory: 79%/80%  реплик: 1
+  под scaletestapp-69c544bf95-kz2kq  cpu=21m  mem=23Mi
+--- 02:58:16
+  HPA: memory: 79%/80%  реплик: 1
+  под scaletestapp-69c544bf95-kz2kq  cpu=21m  mem=23Mi
+--- 02:58:26
+  HPA: memory: 79%/80%  реплик: 1
+  под scaletestapp-69c544bf95-kz2kq  cpu=21m  mem=23Mi
+--- 02:58:36
+  HPA: memory: 79%/80%  реплик: 1
+  под scaletestapp-69c544bf95-kz2kq  cpu=21m  mem=23Mi
+--- 02:58:47
+  HPA: memory: 79%/80%  реплик: 1
+  под scaletestapp-69c544bf95-kz2kq  cpu=21m  mem=23Mi
+--- 02:58:57
+  HPA: memory: 79%/80%  реплик: 1
+  под scaletestapp-69c544bf95-kz2kq  cpu=22m  mem=27Mi
+--- 02:59:07
+  HPA: memory: 92%/80%  реплик: 1
+  под scaletestapp-69c544bf95-kz2kq  cpu=22m  mem=27Mi
+--- 02:59:17
+  HPA: memory: 92%/80%  реплик: 1
+  под scaletestapp-69c544bf95-kz2kq  cpu=22m  mem=27Mi
+--- 02:59:27
+  HPA: memory: 92%/80%  реплик: 2
+  под scaletestapp-69c544bf95-kz2kq  cpu=22m  mem=27Mi
+--- 02:59:38
+  HPA: memory: 92%/80%  реплик: 2
+  под scaletestapp-69c544bf95-kz2kq  cpu=22m  mem=27Mi
+--- 02:59:48
+  HPA: memory: 92%/80%  реплик: 2
+  под scaletestapp-69c544bf95-kz2kq  cpu=22m  mem=27Mi
+--- 02:59:58
+  HPA: memory: 92%/80%  реплик: 2
+  под scaletestapp-69c544bf95-f45st  cpu=11m  mem=23Mi
+--- 03:00:08
+  HPA: memory: 77%/80%  реплик: 2
+  под scaletestapp-69c544bf95-f45st  cpu=11m  mem=23Mi
+--- 03:00:18
+  HPA: memory: 77%/80%  реплик: 2
+  под scaletestapp-69c544bf95-f45st  cpu=11m  mem=23Mi
+--- 03:00:28
+  HPA: memory: 77%/80%  реплик: 2
+  под scaletestapp-69c544bf95-f45st  cpu=11m  mem=23Mi
+--- 03:00:39
+  HPA: memory: 77%/80%  реплик: 2
+  под scaletestapp-69c544bf95-f45st  cpu=11m  mem=23Mi
+--- 03:00:49
+  HPA: memory: 77%/80%  реплик: 2
+  под scaletestapp-69c544bf95-f45st  cpu=11m  mem=23Mi
+--- 03:00:59
+  HPA: memory: 77%/80%  реплик: 2
+  под scaletestapp-69c544bf95-f45st  cpu=4m  mem=12Mi
+--- 03:01:09
+  HPA: memory: 41%/80%  реплик: 2
+  под scaletestapp-69c544bf95-f45st  cpu=4m  mem=12Mi
+--- 03:01:19
+  HPA: memory: 41%/80%  реплик: 2
+  под scaletestapp-69c544bf95-f45st  cpu=4m  mem=12Mi
+--- 03:01:29
+  HPA: memory: 41%/80%  реплик: 2
+  под scaletestapp-69c544bf95-f45st  cpu=4m  mem=12Mi
+--- 03:01:40
+  HPA: memory: 41%/80%  реплик: 2
+  под scaletestapp-69c544bf95-f45st  cpu=4m  mem=12Mi
+--- 03:01:50
+  HPA: memory: 41%/80%  реплик: 2
+  под scaletestapp-69c544bf95-f45st  cpu=4m  mem=12Mi
+--- 03:02:00
+  HPA: memory: 41%/80%  реплик: 2
+  под scaletestapp-69c544bf95-f45st  cpu=29m  mem=28Mi
+  под scaletestapp-69c544bf95-kz2kq  cpu=4m  mem=12Mi
+--- 03:02:10
+  HPA: memory: 69%/80%  реплик: 2
+  под scaletestapp-69c544bf95-f45st  cpu=29m  mem=28Mi
+  под scaletestapp-69c544bf95-kz2kq  cpu=4m  mem=12Mi
+--- 03:02:20
+  HPA: memory: 69%/80%  реплик: 2
+  под scaletestapp-69c544bf95-f45st  cpu=29m  mem=28Mi
+  под scaletestapp-69c544bf95-kz2kq  cpu=4m  mem=12Mi
+--- 03:02:30
+  HPA: memory: 69%/80%  реплик: 2
+  под scaletestapp-69c544bf95-f45st  cpu=29m  mem=28Mi
+  под scaletestapp-69c544bf95-kz2kq  cpu=4m  mem=12Mi
+--- 03:02:41
+  HPA: memory: 69%/80%  реплик: 2
+  под scaletestapp-69c544bf95-f45st  cpu=29m  mem=28Mi
+  под scaletestapp-69c544bf95-kz2kq  cpu=4m  mem=12Mi
+--- 03:02:51
+  HPA: memory: 69%/80%  реплик: 2
+  под scaletestapp-69c544bf95-f45st  cpu=29m  mem=28Mi
+  под scaletestapp-69c544bf95-kz2kq  cpu=4m  mem=12Mi
+--- 03:03:01
+  HPA: memory: 69%/80%  реплик: 2
+  под scaletestapp-69c544bf95-f45st  cpu=3m  mem=14Mi
+  под scaletestapp-69c544bf95-kz2kq  cpu=23m  mem=27Mi
+--- 03:03:11
+  HPA: memory: 69%/80%  реплик: 2
+  под scaletestapp-69c544bf95-f45st  cpu=3m  mem=14Mi
+  под scaletestapp-69c544bf95-kz2kq  cpu=23m  mem=27Mi
+--- 03:03:21
+  HPA: memory: 69%/80%  реплик: 2
+  под scaletestapp-69c544bf95-f45st  cpu=3m  mem=14Mi
+  под scaletestapp-69c544bf95-kz2kq  cpu=23m  mem=27Mi
+--- 03:03:31
+  HPA: memory: 69%/80%  реплик: 2
+  под scaletestapp-69c544bf95-f45st  cpu=3m  mem=14Mi
+  под scaletestapp-69c544bf95-kz2kq  cpu=23m  mem=27Mi
+--- 03:03:42
+  HPA: memory: 69%/80%  реплик: 2
+  под scaletestapp-69c544bf95-f45st  cpu=3m  mem=14Mi
+  под scaletestapp-69c544bf95-kz2kq  cpu=23m  mem=27Mi
+--- 03:03:52
+  HPA: memory: 69%/80%  реплик: 2
+  под scaletestapp-69c544bf95-f45st  cpu=3m  mem=14Mi
+  под scaletestapp-69c544bf95-kz2kq  cpu=23m  mem=27Mi
+--- 03:04:02
+  HPA: memory: 69%/80%  реплик: 2
+  под scaletestapp-69c544bf95-f45st  cpu=14m  mem=28Mi
+--- 03:04:12
+  HPA: memory: 94%/80%  реплик: 2
+  под scaletestapp-69c544bf95-f45st  cpu=14m  mem=28Mi
+--- 03:04:22
+  HPA: memory: 94%/80%  реплик: 2
+  под scaletestapp-69c544bf95-f45st  cpu=14m  mem=28Mi
+--- 03:04:32
+  HPA: memory: 94%/80%  реплик: 2
+  под scaletestapp-69c544bf95-f45st  cpu=14m  mem=28Mi
+--- 03:04:43
+  HPA: memory: 94%/80%  реплик: 2
+  под scaletestapp-69c544bf95-f45st  cpu=14m  mem=28Mi
+--- 03:04:53
+  HPA: memory: 94%/80%  реплик: 2
+  под scaletestapp-69c544bf95-f45st  cpu=4m  mem=14Mi
+  под scaletestapp-69c544bf95-kz2kq  cpu=27m  mem=28Mi
+--- 03:05:03
+  HPA: memory: 94%/80%  реплик: 2
+  под scaletestapp-69c544bf95-f45st  cpu=4m  mem=14Mi
+--- 03:05:13
+  HPA: memory: 47%/80%  реплик: 1
+  под scaletestapp-69c544bf95-f45st  cpu=4m  mem=14Mi
+--- 03:05:23
+  HPA: memory: <unknown>/80%  реплик: 2
+--- 03:05:33
+  HPA: memory: <unknown>/80%  реплик: 2
+
+=== Прогон 4 (итоговый, 300 пользователей): 2026-08-01 03:05:36 ===
+--- 03:05:44
+  HPA: memory: <unknown>/80%  реплик: 2
+--- 03:05:51
+  HPA: memory: <unknown>/80%  реплик: 2
+--- 03:06:01
+  HPA: memory: <unknown>/80%  реплик: 2
+  под scaletestapp-559887c8b9-wnmpc  cpu=3m  mem=13Mi
+  под scaletestapp-559887c8b9-xgqjf  cpu=3m  mem=11Mi
+--- 03:06:12
+  HPA: memory: 42%/80%  реплик: 2
+  под scaletestapp-559887c8b9-wnmpc  cpu=3m  mem=13Mi
+  под scaletestapp-559887c8b9-xgqjf  cpu=3m  mem=11Mi
+--- 03:06:22
+  HPA: memory: 42%/80%  реплик: 2
+  под scaletestapp-559887c8b9-wnmpc  cpu=3m  mem=13Mi
+  под scaletestapp-559887c8b9-xgqjf  cpu=3m  mem=11Mi
+--- 03:06:32
+  HPA: memory: 42%/80%  реплик: 2
+  под scaletestapp-559887c8b9-wnmpc  cpu=3m  mem=13Mi
+  под scaletestapp-559887c8b9-xgqjf  cpu=3m  mem=11Mi
+--- 03:06:42
+  HPA: memory: 42%/80%  реплик: 2
+  под scaletestapp-559887c8b9-wnmpc  cpu=3m  mem=13Mi
+  под scaletestapp-559887c8b9-xgqjf  cpu=3m  mem=11Mi
+--- 03:06:52
+  HPA: memory: 42%/80%  реплик: 2
+  под scaletestapp-559887c8b9-wnmpc  cpu=3m  mem=13Mi
+  под scaletestapp-559887c8b9-xgqjf  cpu=3m  mem=11Mi
+--- 03:07:03
+  HPA: memory: 42%/80%  реплик: 2
+  под scaletestapp-559887c8b9-wnmpc  cpu=5m  mem=14Mi
+  под scaletestapp-559887c8b9-xgqjf  cpu=5m  mem=14Mi
+--- 03:07:13
+  HPA: memory: 47%/80%  реплик: 2
+  под scaletestapp-559887c8b9-wnmpc  cpu=5m  mem=14Mi
+  под scaletestapp-559887c8b9-xgqjf  cpu=5m  mem=14Mi
+--- 03:07:23
+  HPA: memory: 47%/80%  реплик: 2
+  под scaletestapp-559887c8b9-wnmpc  cpu=5m  mem=14Mi
+  под scaletestapp-559887c8b9-xgqjf  cpu=5m  mem=14Mi
+--- 03:07:33
+  HPA: memory: 47%/80%  реплик: 2
+  под scaletestapp-559887c8b9-wnmpc  cpu=5m  mem=14Mi
+  под scaletestapp-559887c8b9-xgqjf  cpu=5m  mem=14Mi
+--- 03:07:43
+  HPA: memory: 47%/80%  реплик: 2
+  под scaletestapp-559887c8b9-wnmpc  cpu=5m  mem=14Mi
+  под scaletestapp-559887c8b9-xgqjf  cpu=5m  mem=14Mi
+--- 03:07:53
+  HPA: memory: 47%/80%  реплик: 2
+  под scaletestapp-559887c8b9-wnmpc  cpu=14m  mem=17Mi
+  под scaletestapp-559887c8b9-xgqjf  cpu=16m  mem=18Mi
+--- 03:08:04
+  HPA: memory: 59%/80%  реплик: 2
+  под scaletestapp-559887c8b9-wnmpc  cpu=14m  mem=17Mi
+  под scaletestapp-559887c8b9-xgqjf  cpu=16m  mem=18Mi
+--- 03:08:14
+  HPA: memory: 59%/80%  реплик: 2
+  под scaletestapp-559887c8b9-wnmpc  cpu=14m  mem=17Mi
+  под scaletestapp-559887c8b9-xgqjf  cpu=16m  mem=18Mi
+--- 03:08:24
+  HPA: memory: 59%/80%  реплик: 2
+  под scaletestapp-559887c8b9-wnmpc  cpu=14m  mem=17Mi
+  под scaletestapp-559887c8b9-xgqjf  cpu=16m  mem=18Mi
+--- 03:08:34
+  HPA: memory: 59%/80%  реплик: 2
+  под scaletestapp-559887c8b9-wnmpc  cpu=14m  mem=17Mi
+  под scaletestapp-559887c8b9-xgqjf  cpu=16m  mem=18Mi
+--- 03:08:44
+  HPA: memory: 59%/80%  реплик: 2
+  под scaletestapp-559887c8b9-wnmpc  cpu=14m  mem=17Mi
+  под scaletestapp-559887c8b9-xgqjf  cpu=16m  mem=18Mi
+--- 03:08:55
+  HPA: memory: 59%/80%  реплик: 2
+  под scaletestapp-559887c8b9-wnmpc  cpu=15m  mem=18Mi
+  под scaletestapp-559887c8b9-xgqjf  cpu=17m  mem=19Mi
+--- 03:09:05
+  HPA: memory: 63%/80%  реплик: 2
+  под scaletestapp-559887c8b9-wnmpc  cpu=15m  mem=18Mi
+  под scaletestapp-559887c8b9-xgqjf  cpu=17m  mem=19Mi
+--- 03:09:15
+  HPA: memory: 63%/80%  реплик: 2
+  под scaletestapp-559887c8b9-wnmpc  cpu=15m  mem=18Mi
+  под scaletestapp-559887c8b9-xgqjf  cpu=17m  mem=19Mi
+--- 03:09:25
+  HPA: memory: 63%/80%  реплик: 2
+  под scaletestapp-559887c8b9-wnmpc  cpu=15m  mem=18Mi
+  под scaletestapp-559887c8b9-xgqjf  cpu=17m  mem=19Mi
+--- 03:09:35
+  HPA: memory: 63%/80%  реплик: 2
+  под scaletestapp-559887c8b9-wnmpc  cpu=15m  mem=18Mi
+  под scaletestapp-559887c8b9-xgqjf  cpu=17m  mem=19Mi
+--- 03:09:46
+  HPA: memory: 63%/80%  реплик: 2
+  под scaletestapp-559887c8b9-wnmpc  cpu=15m  mem=18Mi
+  под scaletestapp-559887c8b9-xgqjf  cpu=17m  mem=19Mi
+--- 03:09:56
+  HPA: memory: 63%/80%  реплик: 2
+  под scaletestapp-559887c8b9-wnmpc  cpu=14m  mem=19Mi
+  под scaletestapp-559887c8b9-xgqjf  cpu=16m  mem=19Mi
+--- 03:10:06
+  HPA: memory: 65%/80%  реплик: 2
+  под scaletestapp-559887c8b9-wnmpc  cpu=14m  mem=19Mi
+  под scaletestapp-559887c8b9-xgqjf  cpu=16m  mem=19Mi
+--- 03:10:16
+  HPA: memory: 65%/80%  реплик: 2
+  под scaletestapp-559887c8b9-wnmpc  cpu=14m  mem=19Mi
+  под scaletestapp-559887c8b9-xgqjf  cpu=16m  mem=19Mi
+--- 03:10:26
+  HPA: memory: 65%/80%  реплик: 2
+  под scaletestapp-559887c8b9-wnmpc  cpu=14m  mem=19Mi
+  под scaletestapp-559887c8b9-xgqjf  cpu=16m  mem=19Mi
+--- 03:10:36
+  HPA: memory: 65%/80%  реплик: 2
+  под scaletestapp-559887c8b9-wnmpc  cpu=14m  mem=19Mi
+  под scaletestapp-559887c8b9-xgqjf  cpu=16m  mem=19Mi
+--- 03:10:47
+  HPA: memory: 65%/80%  реплик: 2
+  под scaletestapp-559887c8b9-wnmpc  cpu=14m  mem=19Mi
+  под scaletestapp-559887c8b9-xgqjf  cpu=16m  mem=19Mi
+--- 03:10:57
+  HPA: memory: 65%/80%  реплик: 2
+  под scaletestapp-559887c8b9-wnmpc  cpu=15m  mem=22Mi
+  под scaletestapp-559887c8b9-xgqjf  cpu=17m  mem=19Mi
+--- 03:11:07
+  HPA: memory: 69%/80%  реплик: 2
+  под scaletestapp-559887c8b9-wnmpc  cpu=15m  mem=22Mi
+  под scaletestapp-559887c8b9-xgqjf  cpu=17m  mem=19Mi
+--- 03:11:17
+  HPA: memory: 69%/80%  реплик: 2
+  под scaletestapp-559887c8b9-wnmpc  cpu=15m  mem=22Mi
+  под scaletestapp-559887c8b9-xgqjf  cpu=17m  mem=19Mi
+--- 03:11:27
+  HPA: memory: 69%/80%  реплик: 2
+  под scaletestapp-559887c8b9-wnmpc  cpu=15m  mem=22Mi
+  под scaletestapp-559887c8b9-xgqjf  cpu=17m  mem=19Mi
+--- 03:11:38
+  HPA: memory: 69%/80%  реплик: 2
+  под scaletestapp-559887c8b9-wnmpc  cpu=15m  mem=22Mi
+  под scaletestapp-559887c8b9-xgqjf  cpu=17m  mem=19Mi
+--- 03:11:48
+  HPA: memory: 69%/80%  реплик: 2
+  под scaletestapp-559887c8b9-wnmpc  cpu=15m  mem=22Mi
+  под scaletestapp-559887c8b9-xgqjf  cpu=17m  mem=19Mi
+--- 03:11:58
+  HPA: memory: 69%/80%  реплик: 2
+  под scaletestapp-559887c8b9-wnmpc  cpu=15m  mem=22Mi
+  под scaletestapp-559887c8b9-xgqjf  cpu=17m  mem=20Mi
+--- 03:12:08
+  HPA: memory: 71%/80%  реплик: 2
+  под scaletestapp-559887c8b9-wnmpc  cpu=15m  mem=22Mi
+  под scaletestapp-559887c8b9-xgqjf  cpu=17m  mem=20Mi
+--- 03:12:18
+  HPA: memory: 71%/80%  реплик: 2
+  под scaletestapp-559887c8b9-wnmpc  cpu=15m  mem=22Mi
+  под scaletestapp-559887c8b9-xgqjf  cpu=17m  mem=20Mi
+--- 03:12:28
+  HPA: memory: 71%/80%  реплик: 2
+  под scaletestapp-559887c8b9-wnmpc  cpu=15m  mem=22Mi
+  под scaletestapp-559887c8b9-xgqjf  cpu=17m  mem=20Mi
+--- 03:12:38
+  HPA: memory: 71%/80%  реплик: 2
+  под scaletestapp-559887c8b9-wnmpc  cpu=15m  mem=22Mi
+  под scaletestapp-559887c8b9-xgqjf  cpu=17m  mem=20Mi
+--- 03:12:49
+  HPA: memory: 71%/80%  реплик: 2
+  под scaletestapp-559887c8b9-wnmpc  cpu=15m  mem=22Mi
+  под scaletestapp-559887c8b9-xgqjf  cpu=17m  mem=20Mi
+--- 03:12:59
+  HPA: memory: 71%/80%  реплик: 2
+  под scaletestapp-559887c8b9-wnmpc  cpu=15m  mem=21Mi
+  под scaletestapp-559887c8b9-xgqjf  cpu=17m  mem=20Mi
+--- 03:13:09
+  HPA: memory: 69%/80%  реплик: 2
+  под scaletestapp-559887c8b9-wnmpc  cpu=15m  mem=21Mi
+  под scaletestapp-559887c8b9-xgqjf  cpu=17m  mem=20Mi
+--- 03:13:19
+  HPA: memory: 69%/80%  реплик: 2
+  под scaletestapp-559887c8b9-wnmpc  cpu=15m  mem=21Mi
+  под scaletestapp-559887c8b9-xgqjf  cpu=17m  mem=20Mi
+
+=== Итог части 1: 2026-08-01 03:16:42 ===
+NAME                  REFERENCE                 TARGETS           MINPODS   MAXPODS   REPLICAS   AGE
+scaletestapp-memory   Deployment/scaletestapp   memory: 72%/80%   1         10        2          21m
+
+Events:
+  Type     Reason                        Age                From                       Message
+  ----     ------                        ----               ----                       -------
+  Normal   SuccessfulRescale             17m                horizontal-pod-autoscaler  New size: 2; reason: memory resource utilization (percentage of request) above target
+  Normal   SuccessfulRescale             11m                horizontal-pod-autoscaler  New size: 2; reason:
+  Warning  FailedGetResourceMetric       10m (x6 over 21m)  horizontal-pod-autoscaler  failed to get memory utilization: unable to get metrics for resource memory: no metrics returned from resource metrics API
+  Warning  FailedComputeMetricsReplicas  10m (x6 over 21m)  horizontal-pod-autoscaler  invalid metrics (1 invalid out of 1), first error is: failed to get memory resource metric value: failed to get memory utilization: unable to get metrics for resource memory: no metrics returned from resource metrics API
+
+--- поды:
+NAME                            READY   STATUS    RESTARTS   AGE
+scaletestapp-559887c8b9-wnmpc   1/1     Running   0          11m
+scaletestapp-559887c8b9-xgqjf   1/1     Running   0          11m

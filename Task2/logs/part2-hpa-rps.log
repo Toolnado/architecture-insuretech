@@ -1,0 +1,322 @@
+=== Часть 2: динамическая маршрутизация по количеству запросов в секунду (RPS) ===
+старт: 2026-08-01 02:05:28
+HPA scaletestapp-rps: целевое значение 20 RPS на под, minReplicas=1, maxReplicas=10
+источник метрики: Prometheus -> prometheus-adapter -> custom.metrics.k8s.io
+нагрузка: locust, 300 пользователей, ~97 RPS суммарно
+ожидаемый результат: 97 / 20 = 5 реплик
+
+--- 02:05:28
+  HPA: 0/20  реплик: 1
+  Deployment ready: 1/1
+  RPS по подам: 85bf77c764-t6rdw=0
+--- 02:05:38
+  HPA: 0/20  реплик: 1
+  Deployment ready: 1/1
+  RPS по подам: 85bf77c764-t6rdw=4377m
+--- 02:05:48
+  HPA: 4377m/20  реплик: 1
+  Deployment ready: 1/1
+  RPS по подам: 85bf77c764-t6rdw=4377m
+--- 02:05:58
+  HPA: 24777m/20  реплик: 1
+  Deployment ready: 1/2
+  RPS по подам: 85bf77c764-t6rdw=24777m
+--- 02:06:09
+  HPA: 24777m/20  реплик: 1
+  Deployment ready: 1/2
+  RPS по подам: 85bf77c764-t6rdw=57847m
+--- 02:06:19
+  HPA: 57847m/20  реплик: 2
+  Deployment ready: 2/3
+  RPS по подам: 85bf77c764-t6rdw=57847m
+--- 02:06:29
+  HPA: 43377m/20  реплик: 3
+  Deployment ready: 3/5
+  RPS по подам: 85bf77c764-g6ssm=0, 85bf77c764-t6rdw=86755m
+--- 02:06:39
+  HPA: 43377m/20  реплик: 3
+  Deployment ready: 3/5
+  RPS по подам: 85bf77c764-g6ssm=0, 85bf77c764-l46zb=0, 85bf77c764-t6rdw=99311m
+--- 02:06:50
+  HPA: 33103m/20  реплик: 5
+  Deployment ready: 5/5
+  RPS по подам: 85bf77c764-g6ssm=0, 85bf77c764-l46zb=0, 85bf77c764-ssczl=0, 85bf77c764-t6rdw=99311m
+--- 02:07:00
+  HPA: 24822m/20  реплик: 5
+  Deployment ready: 5/5
+  RPS по подам: 85bf77c764-6w6d4=0, 85bf77c764-g6ssm=0, 85bf77c764-l46zb=0, 85bf77c764-ssczl=0, 85bf77c764-t6rdw=99288m
+--- 02:07:10
+  HPA: 24822m/20  реплик: 5
+  Deployment ready: 5/5
+  RPS по подам: 85bf77c764-6w6d4=0, 85bf77c764-g6ssm=0, 85bf77c764-l46zb=0, 85bf77c764-ssczl=0, 85bf77c764-t6rdw=99333m
+--- 02:07:20
+  HPA: 19866m/20  реплик: 5
+  Deployment ready: 5/5
+  RPS по подам: 85bf77c764-6w6d4=0, 85bf77c764-g6ssm=0, 85bf77c764-l46zb=0, 85bf77c764-ssczl=0, 85bf77c764-t6rdw=99333m
+--- 02:07:30
+  HPA: 19840m/20  реплик: 5
+  Deployment ready: 5/5
+  RPS по подам: 85bf77c764-6w6d4=0, 85bf77c764-g6ssm=0, 85bf77c764-l46zb=0, 85bf77c764-ssczl=0, 85bf77c764-t6rdw=99202m
+--- 02:07:41
+  HPA: 19840m/20  реплик: 5
+  Deployment ready: 5/5
+  RPS по подам: 85bf77c764-6w6d4=0, 85bf77c764-g6ssm=0, 85bf77c764-l46zb=0, 85bf77c764-ssczl=0, 85bf77c764-t6rdw=99506m
+--- 02:07:51
+  HPA: 19901m/20  реплик: 5
+  Deployment ready: 5/5
+  RPS по подам: 85bf77c764-6w6d4=0, 85bf77c764-g6ssm=0, 85bf77c764-l46zb=0, 85bf77c764-ssczl=0, 85bf77c764-t6rdw=99506m
+--- 02:08:01
+  HPA: 19844m/20  реплик: 5
+  Deployment ready: 5/5
+  RPS по подам: 85bf77c764-6w6d4=0, 85bf77c764-g6ssm=0, 85bf77c764-l46zb=0, 85bf77c764-ssczl=0, 85bf77c764-t6rdw=99222m
+--- 02:08:12
+  HPA: 19844m/20  реплик: 5
+  Deployment ready: 5/5
+  RPS по подам: 85bf77c764-6w6d4=0, 85bf77c764-g6ssm=0, 85bf77c764-l46zb=0, 85bf77c764-ssczl=0, 85bf77c764-t6rdw=100226m
+--- 02:08:22
+  HPA: 20045m/20  реплик: 5
+  Deployment ready: 5/5
+  RPS по подам: 85bf77c764-6w6d4=0, 85bf77c764-g6ssm=0, 85bf77c764-l46zb=0, 85bf77c764-ssczl=0, 85bf77c764-t6rdw=100226m
+--- 02:08:32
+  HPA: 20044m/20  реплик: 5
+  Deployment ready: 5/5
+  RPS по подам: 85bf77c764-6w6d4=0, 85bf77c764-g6ssm=0, 85bf77c764-l46zb=0, 85bf77c764-ssczl=0, 85bf77c764-t6rdw=100224m
+--- 02:08:42
+  HPA: 20044m/20  реплик: 5
+  Deployment ready: 5/5
+  RPS по подам: 85bf77c764-6w6d4=0, 85bf77c764-g6ssm=0, 85bf77c764-l46zb=0, 85bf77c764-ssczl=0, 85bf77c764-t6rdw=101046m
+--- 02:08:52
+  HPA: 20209m/20  реплик: 5
+  Deployment ready: 5/5
+  RPS по подам: 85bf77c764-6w6d4=0, 85bf77c764-g6ssm=0, 85bf77c764-l46zb=0, 85bf77c764-ssczl=0, 85bf77c764-t6rdw=100771m
+--- 02:09:03
+  HPA: 20154m/20  реплик: 5
+  Deployment ready: 5/5
+  RPS по подам: 85bf77c764-6w6d4=0, 85bf77c764-g6ssm=0, 85bf77c764-l46zb=0, 85bf77c764-ssczl=0, 85bf77c764-t6rdw=100771m
+--- 02:09:13
+  HPA: 20154m/20  реплик: 5
+  Deployment ready: 5/5
+  RPS по подам: 85bf77c764-6w6d4=0, 85bf77c764-g6ssm=0, 85bf77c764-l46zb=0, 85bf77c764-ssczl=0, 85bf77c764-t6rdw=101086m
+--- 02:09:23
+  HPA: 20217m/20  реплик: 5
+  Deployment ready: 5/5
+  RPS по подам: 85bf77c764-6w6d4=0, 85bf77c764-g6ssm=0, 85bf77c764-l46zb=0, 85bf77c764-ssczl=0, 85bf77c764-t6rdw=100528m
+--- 02:09:33
+  HPA: 20105m/20  реплик: 5
+  Deployment ready: 5/5
+  RPS по подам: 85bf77c764-6w6d4=0, 85bf77c764-g6ssm=0, 85bf77c764-l46zb=0, 85bf77c764-ssczl=0, 85bf77c764-t6rdw=100528m
+--- 02:09:44
+  HPA: 20018m/20  реплик: 5
+  Deployment ready: 5/5
+  RPS по подам: 85bf77c764-6w6d4=0, 85bf77c764-g6ssm=0, 85bf77c764-l46zb=0, 85bf77c764-ssczl=0, 85bf77c764-t6rdw=100091m
+--- 02:09:54
+  HPA: 20018m/20  реплик: 5
+  Deployment ready: 5/5
+  RPS по подам: 85bf77c764-6w6d4=0, 85bf77c764-g6ssm=0, 85bf77c764-l46zb=0, 85bf77c764-ssczl=0, 85bf77c764-t6rdw=99559m
+--- 02:10:04
+  HPA: 19911m/20  реплик: 5
+  Deployment ready: 5/5
+  RPS по подам: 85bf77c764-6w6d4=0, 85bf77c764-g6ssm=0, 85bf77c764-l46zb=0, 85bf77c764-ssczl=0, 85bf77c764-t6rdw=99559m
+--- 02:10:14
+  HPA: 19916m/20  реплик: 5
+  Deployment ready: 5/5
+  RPS по подам: 85bf77c764-6w6d4=0, 85bf77c764-g6ssm=0, 85bf77c764-l46zb=0, 85bf77c764-ssczl=0, 85bf77c764-t6rdw=99582m
+--- 02:10:25
+  HPA: 19916m/20  реплик: 5
+  Deployment ready: 5/5
+  RPS по подам: 85bf77c764-6w6d4=0, 85bf77c764-g6ssm=0, 85bf77c764-l46zb=0, 85bf77c764-ssczl=0, 85bf77c764-t6rdw=99373m
+--- 02:10:35
+  HPA: 19874m/20  реплик: 5
+  Deployment ready: 5/5
+  RPS по подам: 85bf77c764-6w6d4=0, 85bf77c764-g6ssm=0, 85bf77c764-l46zb=0, 85bf77c764-ssczl=0, 85bf77c764-t6rdw=99373m
+--- 02:10:45
+  HPA: 20007m/20  реплик: 5
+  Deployment ready: 5/5
+  RPS по подам: 85bf77c764-6w6d4=0, 85bf77c764-g6ssm=0, 85bf77c764-l46zb=0, 85bf77c764-ssczl=0, 85bf77c764-t6rdw=100039m
+--- 02:10:55
+  HPA: 20007m/20  реплик: 5
+  Deployment ready: 5/5
+  RPS по подам: 85bf77c764-6w6d4=0, 85bf77c764-g6ssm=0, 85bf77c764-l46zb=0, 85bf77c764-ssczl=0, 85bf77c764-t6rdw=100088m
+--- 02:11:05
+  HPA: 20017m/20  реплик: 5
+  Deployment ready: 5/5
+  RPS по подам: 85bf77c764-6w6d4=0, 85bf77c764-g6ssm=0, 85bf77c764-l46zb=0, 85bf77c764-ssczl=0, 85bf77c764-t6rdw=100088m
+--- 02:11:16
+  HPA: 20133m/20  реплик: 5
+  Deployment ready: 5/5
+  RPS по подам: 85bf77c764-6w6d4=0, 85bf77c764-g6ssm=0, 85bf77c764-l46zb=0, 85bf77c764-ssczl=0, 85bf77c764-t6rdw=100668m
+--- 02:11:26
+  HPA: 20133m/20  реплик: 5
+  Deployment ready: 5/5
+  RPS по подам: 85bf77c764-6w6d4=0, 85bf77c764-g6ssm=0, 85bf77c764-l46zb=0, 85bf77c764-ssczl=0, 85bf77c764-t6rdw=101024m
+--- 02:11:36
+  HPA: 20204m/20  реплик: 5
+  Deployment ready: 5/5
+  RPS по подам: 85bf77c764-6w6d4=0, 85bf77c764-g6ssm=0, 85bf77c764-l46zb=0, 85bf77c764-ssczl=0, 85bf77c764-t6rdw=101024m
+--- 02:11:46
+  HPA: 20172m/20  реплик: 5
+  Deployment ready: 5/5
+  RPS по подам: 85bf77c764-6w6d4=0, 85bf77c764-g6ssm=0, 85bf77c764-l46zb=0, 85bf77c764-ssczl=0, 85bf77c764-t6rdw=100864m
+--- 02:11:57
+  HPA: 20172m/20  реплик: 5
+  Deployment ready: 5/5
+  RPS по подам: 85bf77c764-6w6d4=0, 85bf77c764-g6ssm=0, 85bf77c764-l46zb=0, 85bf77c764-ssczl=0, 85bf77c764-t6rdw=99908m
+--- 02:12:07
+  HPA: 19981m/20  реплик: 5
+  Deployment ready: 5/5
+  RPS по подам: 85bf77c764-6w6d4=0, 85bf77c764-g6ssm=0, 85bf77c764-l46zb=0, 85bf77c764-ssczl=0, 85bf77c764-t6rdw=99622m
+--- 02:12:17
+  HPA: 19924m/20  реплик: 5
+  Deployment ready: 5/5
+  RPS по подам: 85bf77c764-6w6d4=0, 85bf77c764-g6ssm=0, 85bf77c764-l46zb=0, 85bf77c764-ssczl=0, 85bf77c764-t6rdw=99622m
+--- 02:12:27
+  HPA: 19924m/20  реплик: 5
+  Deployment ready: 5/5
+  RPS по подам: 85bf77c764-6w6d4=0, 85bf77c764-g6ssm=0, 85bf77c764-l46zb=0, 85bf77c764-ssczl=0, 85bf77c764-t6rdw=100066m
+--- 02:12:38
+  HPA: 20013m/20  реплик: 5
+  Deployment ready: 5/5
+  RPS по подам: 85bf77c764-6w6d4=0, 85bf77c764-g6ssm=0, 85bf77c764-l46zb=0, 85bf77c764-ssczl=0, 85bf77c764-t6rdw=100646m
+--- 02:12:48
+  HPA: 20129m/20  реплик: 5
+  Deployment ready: 5/5
+  RPS по подам: 85bf77c764-6w6d4=0, 85bf77c764-g6ssm=0, 85bf77c764-l46zb=0, 85bf77c764-ssczl=0, 85bf77c764-t6rdw=100646m
+--- 02:12:58
+  HPA: 20129m/20  реплик: 5
+  Deployment ready: 5/5
+  RPS по подам: 85bf77c764-6w6d4=0, 85bf77c764-g6ssm=0, 85bf77c764-l46zb=0, 85bf77c764-ssczl=0, 85bf77c764-t6rdw=99533m
+--- 02:13:08
+  HPA: 19906m/20  реплик: 5
+  Deployment ready: 5/5
+  RPS по подам: 85bf77c764-6w6d4=0, 85bf77c764-g6ssm=0, 85bf77c764-l46zb=0, 85bf77c764-ssczl=0, 85bf77c764-t6rdw=98686m
+--- 02:13:19
+  HPA: 19737m/20  реплик: 5
+  Deployment ready: 5/5
+  RPS по подам: 85bf77c764-6w6d4=0, 85bf77c764-g6ssm=0, 85bf77c764-l46zb=0, 85bf77c764-ssczl=0, 85bf77c764-t6rdw=98686m
+--- 02:13:29
+  HPA: 19773m/20  реплик: 5
+  Deployment ready: 5/5
+  RPS по подам: 85bf77c764-6w6d4=0, 85bf77c764-g6ssm=0, 85bf77c764-l46zb=0, 85bf77c764-ssczl=0, 85bf77c764-t6rdw=98868m
+--- 02:13:39
+  HPA: 19773m/20  реплик: 5
+  Deployment ready: 5/5
+  RPS по подам: 85bf77c764-6w6d4=0, 85bf77c764-g6ssm=0, 85bf77c764-l46zb=0, 85bf77c764-ssczl=0, 85bf77c764-t6rdw=79398m
+--- 02:13:49
+  HPA: 15879m/20  реплик: 5
+  Deployment ready: 5/5
+  RPS по подам: 85bf77c764-6w6d4=0, 85bf77c764-g6ssm=0, 85bf77c764-l46zb=0, 85bf77c764-ssczl=0, 85bf77c764-t6rdw=79398m
+--- 02:14:00
+  HPA: 9315m/20  реплик: 5
+  Deployment ready: 5/5
+  RPS по подам: 85bf77c764-6w6d4=0, 85bf77c764-g6ssm=0, 85bf77c764-l46zb=0, 85bf77c764-ssczl=0, 85bf77c764-t6rdw=46578m
+--- 02:14:10
+  HPA: 9315m/20  реплик: 5
+  Deployment ready: 5/5
+  RPS по подам: 85bf77c764-6w6d4=0, 85bf77c764-g6ssm=0, 85bf77c764-l46zb=0, 85bf77c764-ssczl=0, 85bf77c764-t6rdw=13288m
+--- 02:14:20
+  HPA: 2657m/20  реплик: 5
+  Deployment ready: 5/5
+  RPS по подам: 85bf77c764-6w6d4=0, 85bf77c764-g6ssm=0, 85bf77c764-l46zb=0, 85bf77c764-ssczl=0, 85bf77c764-t6rdw=13288m
+--- 02:14:30
+  HPA: 0/20  реплик: 5
+  Deployment ready: 5/5
+  RPS по подам: 85bf77c764-6w6d4=0, 85bf77c764-g6ssm=0, 85bf77c764-l46zb=0, 85bf77c764-ssczl=0, 85bf77c764-t6rdw=0
+--- 02:14:41
+  HPA: 0/20  реплик: 5
+  Deployment ready: 5/5
+  RPS по подам: 85bf77c764-6w6d4=0, 85bf77c764-g6ssm=0, 85bf77c764-l46zb=0, 85bf77c764-ssczl=0, 85bf77c764-t6rdw=0
+--- 02:14:51
+  HPA: 0/20  реплик: 5
+  Deployment ready: 5/5
+  RPS по подам: 85bf77c764-6w6d4=0, 85bf77c764-g6ssm=0, 85bf77c764-l46zb=0, 85bf77c764-ssczl=0, 85bf77c764-t6rdw=0
+--- 02:15:01
+  HPA: 0/20  реплик: 5
+  Deployment ready: 5/5
+  RPS по подам: 85bf77c764-6w6d4=0, 85bf77c764-g6ssm=0, 85bf77c764-l46zb=0, 85bf77c764-ssczl=0, 85bf77c764-t6rdw=0
+--- 02:15:11
+  HPA: 0/20  реплик: 5
+  Deployment ready: 5/5
+  RPS по подам: 85bf77c764-6w6d4=0, 85bf77c764-g6ssm=0, 85bf77c764-l46zb=0, 85bf77c764-ssczl=0, 85bf77c764-t6rdw=0
+--- 02:15:22
+  HPA: 0/20  реплик: 5
+  Deployment ready: 5/5
+  RPS по подам: 85bf77c764-6w6d4=0, 85bf77c764-g6ssm=0, 85bf77c764-l46zb=0, 85bf77c764-ssczl=0, 85bf77c764-t6rdw=0
+--- 02:15:32
+  HPA: 0/20  реплик: 5
+  Deployment ready: 5/5
+  RPS по подам: 85bf77c764-6w6d4=0, 85bf77c764-g6ssm=0, 85bf77c764-l46zb=0, 85bf77c764-ssczl=0, 85bf77c764-t6rdw=0
+--- 02:15:42
+  HPA: 0/20  реплик: 5
+  Deployment ready: 5/5
+  RPS по подам: 85bf77c764-6w6d4=0, 85bf77c764-g6ssm=0, 85bf77c764-l46zb=0, 85bf77c764-ssczl=0, 85bf77c764-t6rdw=0
+--- 02:15:53
+  HPA: 0/20  реплик: 5
+  Deployment ready: 5/5
+  RPS по подам: 85bf77c764-6w6d4=0, 85bf77c764-g6ssm=0, 85bf77c764-l46zb=0, 85bf77c764-ssczl=0, 85bf77c764-t6rdw=0
+--- 02:16:03
+  HPA: 0/20  реплик: 5
+  Deployment ready: 5/5
+  RPS по подам: 85bf77c764-6w6d4=0, 85bf77c764-g6ssm=0, 85bf77c764-l46zb=0, 85bf77c764-ssczl=0, 85bf77c764-t6rdw=0
+--- 02:16:13
+  HPA: 0/20  реплик: 5
+  Deployment ready: 5/5
+  RPS по подам: 85bf77c764-6w6d4=0, 85bf77c764-g6ssm=0, 85bf77c764-l46zb=0, 85bf77c764-ssczl=0, 85bf77c764-t6rdw=0
+--- 02:16:23
+  HPA: 0/20  реплик: 5
+  Deployment ready: 5/5
+  RPS по подам: 85bf77c764-6w6d4=0, 85bf77c764-g6ssm=0, 85bf77c764-l46zb=0, 85bf77c764-ssczl=0, 85bf77c764-t6rdw=0
+--- 02:16:34
+  HPA: 0/20  реплик: 5
+  Deployment ready: 5/5
+  RPS по подам: 85bf77c764-6w6d4=0, 85bf77c764-g6ssm=0, 85bf77c764-l46zb=0, 85bf77c764-ssczl=0, 85bf77c764-t6rdw=0
+--- 02:16:44
+  HPA: 0/20  реплик: 5
+  Deployment ready: 5/5
+  RPS по подам: 85bf77c764-6w6d4=0, 85bf77c764-g6ssm=0, 85bf77c764-l46zb=0, 85bf77c764-ssczl=0, 85bf77c764-t6rdw=0
+--- 02:16:54
+  HPA: 0/20  реплик: 5
+  Deployment ready: 5/5
+  RPS по подам: 85bf77c764-6w6d4=0, 85bf77c764-g6ssm=0, 85bf77c764-l46zb=0, 85bf77c764-ssczl=0, 85bf77c764-t6rdw=0
+--- 02:17:04
+  HPA: 0/20  реплик: 5
+  Deployment ready: 5/5
+  RPS по подам: 85bf77c764-6w6d4=0, 85bf77c764-g6ssm=0, 85bf77c764-l46zb=0, 85bf77c764-ssczl=0, 85bf77c764-t6rdw=0
+--- 02:17:15
+  HPA: 0/20  реплик: 5
+  Deployment ready: 5/5
+  RPS по подам: 85bf77c764-6w6d4=0, 85bf77c764-g6ssm=0, 85bf77c764-l46zb=0, 85bf77c764-ssczl=0, 85bf77c764-t6rdw=0
+--- 02:17:25
+  HPA: 0/20  реплик: 5
+  Deployment ready: 5/5
+  RPS по подам: 85bf77c764-6w6d4=0, 85bf77c764-g6ssm=0, 85bf77c764-l46zb=0, 85bf77c764-ssczl=0, 85bf77c764-t6rdw=0
+--- 02:17:35
+  HPA: 0/20  реплик: 5
+  Deployment ready: 5/5
+  RPS по подам: 85bf77c764-6w6d4=0, 85bf77c764-g6ssm=0, 85bf77c764-l46zb=0, 85bf77c764-ssczl=0, 85bf77c764-t6rdw=0
+
+=== Итог части 2: 2026-08-01 02:17:45 ===
+NAME               REFERENCE                 TARGETS   MINPODS   MAXPODS   REPLICAS   AGE
+scaletestapp-rps   Deployment/scaletestapp   0/20      1         10        5          38m
+
+Events:
+  Type    Reason             Age                From                       Message
+  ----    ------             ----               ----                       -------
+  Normal  SuccessfulRescale  37m                horizontal-pod-autoscaler  New size: 5; reason: All metrics below target
+  Normal  SuccessfulRescale  23m (x2 over 38m)  horizontal-pod-autoscaler  New size: 4; reason: All metrics below target
+  Normal  SuccessfulRescale  22m                horizontal-pod-autoscaler  New size: 2; reason: All metrics below target
+  Normal  SuccessfulRescale  22m                horizontal-pod-autoscaler  New size: 1; reason: All metrics below target
+  Normal  SuccessfulRescale  11m                horizontal-pod-autoscaler  New size: 2; reason: pods metric http_requests_per_second above target
+  Normal  SuccessfulRescale  11m                horizontal-pod-autoscaler  New size: 3; reason: pods metric http_requests_per_second above target
+  Normal  SuccessfulRescale  11m                horizontal-pod-autoscaler  New size: 5; reason: pods metric http_requests_per_second above target
+
+--- поды:
+NAME                            READY   STATUS    RESTARTS      AGE
+scaletestapp-85bf77c764-6w6d4   1/1     Running   0             11m
+scaletestapp-85bf77c764-g6ssm   1/1     Running   0             11m
+scaletestapp-85bf77c764-l46zb   1/1     Running   0             11m
+scaletestapp-85bf77c764-ssczl   1/1     Running   0             11m
+scaletestapp-85bf77c764-t6rdw   1/1     Running   2 (44m ago)   91m
+
+--- сводка locust:
+         Aggregated                                                                     46670     0(0.00%) |      9       1      71      6 |   97.28        0.00
+         Aggregated                                                                              6      8     11     13     22     30     40     45     51     62     71  46670
